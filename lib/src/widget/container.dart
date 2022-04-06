@@ -42,7 +42,7 @@ class _ToastContainerState extends State<ToastContainer>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
 
     Future<void>.delayed(const Duration(milliseconds: 30), () {
       _animateTo(1.0);
@@ -65,7 +65,7 @@ class _ToastContainerState extends State<ToastContainer>
   @override
   void dispose() {
     _animationController.dispose();
-    WidgetsBinding.instance?.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 

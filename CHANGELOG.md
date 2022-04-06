@@ -1,5 +1,8 @@
 # Change log
 
+## 4.0.0
+- Breaking change fixes from `WidgetBinding.instance` refactored in flutter 2.13 as it's no longer nullable.
+
 ## 3.1.5
 
 - `_ToastContainer` -> `ToastContainer`.

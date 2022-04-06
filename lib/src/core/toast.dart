@@ -167,7 +167,7 @@ ToastFuture showToastWidget(
   if (!context.debugDoingBuild && context.owner?.debugBuilding != true) {
     _insertOverlayEntry();
   } else {
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       _insertOverlayEntry();
     });
   }
